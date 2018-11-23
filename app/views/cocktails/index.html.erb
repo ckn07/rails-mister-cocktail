@@ -1,4 +1,16 @@
-<h1>List of cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1>Le Wagon Berlin</h1>
+    <p>Learn to code with us in Berlin</p>
+    <a class="btn btn-primary btn-lg">Start now</a>
+  </div>
+</div>
+
+
+
+
+<h1>Choose your favorite cockail</h1>
+<h2>or add a new one</h2>
 
 <div class="container">
   <ul>
@@ -13,7 +25,7 @@
               </div>
               <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
               <a class="card-link" href="#" ></a>
-</div>
+              </div>
 
         <% end %>
   </ul>
@@ -21,16 +33,9 @@
 <%= link_to 'Add a cocktail', new_cocktail_path  %>
 
 
+<%= cl_image_tag("ku33zm9o9iio9ubxnyev",
+      width: 400, height: 300, crop: :fill) %>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <!-- insert <div class="card"> -->
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <!-- insert <div class="card"> -->
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <!-- insert <div class="card"> -->
-    </div>
-  </div>
-</div>
+<!-- for face detection -->
+<%= cl_image_tag("rz98srutbgcelncp9xat",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
